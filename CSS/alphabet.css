@@ -1,0 +1,29 @@
+#container{
+    padding: 20px;
+    height: 500px;
+    width: 40%;
+    border: solid green;
+    border-radius: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 100px ;
+    justify-content: center;
+    align-items: center;
+    border: 2.5px solid rgb(107, 244, 198);
+    gap: 20px;
+}
+
+.box{
+    font-size: 100px;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-color: grey;
+    border: 2.5px solid black;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    
+    
+    
+}

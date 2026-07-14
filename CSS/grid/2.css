@@ -1,0 +1,45 @@
+/*
+======== CSS Grid Terms ========
+
+1. Grid Lines
+- Horizontal & vertical boundary lines.
+
+    L1   L2   L3
+     |    |    |
+----+----+----+
+----+----+----+
+----+----+----+
+
+--------------------------------
+
+2. Grid Cell
+- A single box formed by one row and one column.
+
++-----+-----+
+|     |     |
++-----+-----+
+|     | [ ] |  ← Grid Cell
++-----+-----+
+
+--------------------------------
+
+3. Grid Track
+- Space between two adjacent grid lines.
+
+Column Track
+
+|<---- Track ---->|
+|        |        |
+|        |        |
+
+Row Track
+
+--------------------
+      Track
+--------------------
+
+Quick Recall:
+Grid Line  → Boundary
+Grid Cell  → Single Box
+Grid Track → Space between two lines
+*/

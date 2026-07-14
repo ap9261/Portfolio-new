@@ -1,0 +1,39 @@
+/*
+======== z-index ========
+
+- Controls the stacking order of overlapping elements.
+- Works only on positioned elements
+  (position: relative | absolute | fixed | sticky).
+
+Higher z-index → Appears on top.
+Lower z-index  → Appears behind.
+
+Example:
+
+.box1 {
+    position: relative;
+    z-index: 1;
+}
+
+.box2 {
+    position: relative;
+    z-index: 2;
+}
+
+Result:
+z-index: 2  ↑ (Top)
+z-index: 1  ↓ (Bottom)
+
+Diagram:
+
++---------+      (z-index: 2)
+|  Box 2  |
++---------+
+   +---------+    (z-index: 1)
+   |  Box 1  |
+   +---------+
+
+Quick Recall:
+Higher z-index → Front
+Lower z-index  → Back
+*/

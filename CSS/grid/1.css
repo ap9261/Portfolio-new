@@ -1,0 +1,73 @@
+/*
+========================================
+CSS Grid
+========================================
+
+- CSS Grid is a two-dimensional layout system.
+- It allows us to arrange elements in both:
+  1. Rows
+  2. Columns
+
+- Grid is mainly used to create complex and responsive page layouts.
+
+----------------------------------------
+Grid Container
+----------------------------------------
+
+- The parent element on which `display: grid;` is applied is called the Grid Container.
+- It controls the layout of all its direct child elements.
+
+Syntax:
+
+.container {
+    display: grid;
+}
+
+----------------------------------------
+Grid Items
+----------------------------------------
+
+- The direct children of a Grid Container are called Grid Items.
+- Only direct child elements become grid items.
+- Nested elements inside a grid item are NOT grid items unless their parent is also made a grid container.
+
+Example:
+
+<div class="container">
+    <h1>Heading</h1>
+    <h2>Sub Heading</h2>
+</div>
+
+Here:
+- <div>      → Grid Container
+- <h1>       → Grid Item
+- <h2>       → Grid Item
+
+Example with Nested Elements:
+
+<div class="container">
+    <h1>
+        <span>Text</span>
+    </h1>
+</div>
+
+Here:
+- <div>   → Grid Container
+- <h1>    → Grid Item (direct child)
+- <span>  → NOT a Grid Item (nested inside <h1>)
+*/
+
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: black;
+    display: grid;
+
+}
+.item{
+    
+height: 50px;
+width: 100px;
+background-color: green;
+border:  2px solid black;
+}
