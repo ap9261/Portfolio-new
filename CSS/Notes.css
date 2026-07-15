@@ -1,0 +1,446 @@
+
+/* =================================
+CSS SYNTAX
+================================= */
+
+h1{
+    color: blue;
+}
+/* selector { property: value; } */
+
+
+/* =================================
+SELECTORS
+================================= */
+
+h1{
+    color:red;
+}
+/* Element Selector */
+
+.heading{
+    color:blue;
+}
+/* Class Selector */
+
+#logo{
+    color:green;
+}
+/* ID Selector */
+
+*{
+    margin:0;
+}
+/* Universal Selector */
+
+
+/* =================================
+COLORS & BACKGROUND
+================================= */
+
+h1{
+    color:red;
+}
+/* Text color */
+
+body{
+    background-color:wheat;
+}
+/* Background color */
+
+div{
+    background-image:url("bg.jpg");
+}
+/* Background image */
+
+
+/* =================================
+TEXT PROPERTIES
+================================= */
+
+p{
+    font-size:20px;
+}
+/* Text size */
+
+p{
+    font-family:Arial;
+}
+/* Font style */
+
+p{
+    font-weight:bold;
+}
+/* Boldness */
+
+p{
+    text-align:center;
+}
+/* Alignment */
+
+a{
+    text-decoration:none;
+}
+/* Remove underline */
+
+p{
+    line-height:30px;
+}
+/* Space between lines */
+
+
+/* =================================
+WIDTH & HEIGHT
+================================= */
+
+div{
+    width:300px;
+    height:200px;
+}
+/* Set dimensions */
+
+
+/* =================================
+BORDER
+================================= */
+
+div{
+    border:2px solid black;
+}
+/* Border */
+
+div{
+    border-radius:10px;
+}
+/* Rounded corners */
+
+
+/* =================================
+MARGIN & PADDING
+================================= */
+
+div{
+    margin:20px;
+}
+/* Outer space */
+
+div{
+    padding:20px;
+    padding-left: 500px ;
+}
+/* Inner space */
+
+
+/* =================================
+DISPLAY
+================================= */
+
+div{
+    display:block;
+}
+/* Block element */
+
+span{
+    display:inline;
+}
+/* Inline element */
+
+button{
+    display:inline-block;
+}
+/* Inline + width/height */
+
+div{
+    display:none;
+}
+/* Hidden element */
+
+
+/* =================================
+POSITION
+================================= */
+
+div{
+    position:relative;
+}
+/* Relative to normal position */
+
+div{
+    position:absolute;
+}
+/* Relative to parent */
+
+div{
+    position:fixed;
+}
+/* Fixed on screen */
+
+div{
+    position:sticky;
+}
+/* Sticky while scrolling */
+
+div{
+    top:20px;
+    left:10px;
+}
+/* Position offsets */
+
+
+/* =================================
+FLEXBOX
+================================= */
+
+.container{
+    display:flex;
+}
+/* Enable flexbox */
+
+.container{
+    justify-content:center;
+}
+/* Horizontal alignment */
+
+.container{
+    align-items:center;
+}
+/* Vertical alignment */
+
+.container{
+    flex-direction:column;
+}
+/* Vertical layout */
+
+.container{
+    gap:20px;
+}
+/* Space between items */
+
+.item{
+    flex-grow:1;
+}
+/* Grow item */
+
+
+/* =================================
+GRID
+================================= */
+
+.container{
+    display:grid;
+}
+/* Enable grid */
+
+.container{
+    grid-template-columns:1fr 1fr 1fr;
+}
+/* 3 columns */
+
+.container{
+    gap:20px;
+}
+/* Space between grid items */
+
+
+/* =================================
+BOX SHADOW
+================================= */
+
+div{
+    box-shadow:5px 5px 10px gray;
+}
+/* Shadow effect */
+
+
+/* =================================
+OPACITY
+================================= */
+
+div{
+    opacity:0.5;
+}
+/* Transparency */
+
+
+/* =================================
+TRANSFORM
+================================= */
+
+div{
+    transform:translateX(50px);
+}
+/* Move element */
+
+div{
+    transform:scale(1.2);
+}
+/* Increase size */
+
+div{
+    transform:rotate(45deg);
+}
+/* Rotate element */
+
+
+/* =================================
+TRANSITION
+================================= */
+
+button{
+    transition:all 0.3s ease;
+}
+/* Smooth animation */
+
+
+/* =================================
+PSEUDO CLASSES
+================================= */
+
+button:hover{
+    background-color:black;
+}
+/* Mouse over */
+
+button:active{
+    background-color:red;
+}
+/* While clicking */
+
+input:focus{
+    border:2px solid blue;
+}
+/* Input selected */
+
+
+/* =================================
+PSEUDO ELEMENTS
+================================= */
+
+p::first-letter{
+    font-size:30px;
+}
+/* First letter */
+
+p::first-line{
+    color:red;
+}
+/* First line */
+
+
+/* =================================
+MEDIA QUERY
+================================= */
+
+@media(max-width:768px){
+
+    body{
+        background-color:lightblue;
+    }
+
+}
+/* Responsive design */
+
+
+/* =================================
+Z-INDEX
+================================= */
+
+.box{
+    z-index:10;
+}
+/* Stack order */
+
+
+/* =================================
+OVERFLOW
+================================= */
+
+div{
+    overflow:auto;
+}
+/* Handle extra content */
+
+
+/* =================================
+CURSOR
+================================= */
+
+button{
+    cursor:pointer;
+}
+/* Hand cursor */
+
+
+/* =================================
+COMMON COMBINATIONS
+================================= */
+
+.card{
+    width:300px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+```
+/* alpha 
+it is used to show visibility of any color 
+ranges from 0 to 1
+0 means completly not visible and 1 means completly visible 
+*/
+div{
+    background-color: rgb(255,0,0,0.855);
+}
+/* opacity 
+it is used to show visibility of any element
+ranges from 0 to 1
+0 means completly not visible and 1 means completly visible 
+*/
+button{
+    background-color: aliceblue;
+    opacity: 0;
+}
+/*Transition Hover
+It is use to give an time period to hover*/
+
+div{
+    transition:1s;
+    transition-delay: 1s;
+    background-color: antiquewhite;
+    /*center trick any element*/
+    margin: 0 auto; 
+    margin-top: 10x;
+    transition: margin-top 2s ease-in-out 0.2;
+}
+div:hover{
+    background-color: black;
+    border-radius: 50%;
+}
+/*transform rotate*/
+div{
+    transform: rotate(45deg);
+    transform:scale(0.5);
+    /*it is useed to move in x and y*/
+    transform: translate(2,0.5);/*(x,y)*/
+
+    transform: skew(20);
+    transform: rotate(30deg) translate(150px);
+    /*box shadow: x y blur blur-color;*/
+    box-shadow: 2px 3px 20px green;
+    /*bg image*/
+    background-image:url("image.jpg") ;
+    /*bg-size:contain/cover/auto*/
+    background-size:contain ;
+
+}

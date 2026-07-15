@@ -1,0 +1,60 @@
+/*
+======== repeat() Function ========
+
+- repeat() is a shortcut to avoid writing the same value multiple times.
+- Makes the code shorter and easier to read.
+
+Syntax:
+repeat(count, size)
+
+Example:
+
+grid-template-columns: repeat(4, 100px);
+/* Same as: 100px 100px 100px 100px 
+
+grid-template-rows: repeat(5, 50px);
+/* Same as: 50px 50px 50px 50px 50px */
+
+------------------------------------
+
+/* Using fr (Fraction) */
+
+/* - 1fr = 1 equal part of the available space.
+- fr divides the remaining space equally.
+
+Example: */
+
+/* grid-template-columns: repeat(4, 1fr); */
+
+/* Diagram: */
+
+/* +-----+-----+-----+-----+
+| 1fr | 1fr | 1fr | 1fr |
++-----+-----+-----+-----+
+
+All 4 columns get equal width.
+
+Example: */
+
+/* grid-template-rows: repeat(2, 1fr); */
+
+/* Same as: */
+/* grid-template-rows: 1fr 1fr; */
+
+
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-columns: 100px 100px 100px 100px;
+
+}
+.item{
+    
+height: 50px;
+width: 100px;
+background-color: green;
+border:  2px solid black;
+}

@@ -1,0 +1,33 @@
+/* 
+======== gap (Grid Gap) ========
+
+- gap adds space between grid rows and columns.
+- It does NOT add space outside the grid.
+
+Syntax:
+
+gap: 20px;
+
+Diagram:
+
++-----+     +-----+
+|     |     |     |
++-----+     +-----+
+
+     20px Gap
+
++-----+     +-----+
+|     |     |     |
++-----+     +-----+
+
+------------------------------------
+
+Separate Row & Column Gap
+
+row-gap: 20px;      /* Space between rows */
+/* column-gap: 10px;   Space between columns */
+
+/* or */
+
+/* gap: 20px 10px; */
+/* row-gap column-gap */

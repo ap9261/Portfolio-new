@@ -1,0 +1,57 @@
+/*
+======== CSS Animations ========
+
+- Used to animate CSS elements.
+- Animation is created using @keyframes.
+
+Syntax:
+
+@keyframes myAnimation {
+    from { property: value; }
+    to   { property: value; }
+}
+
+Example:
+
+@keyframes grow {
+    from { font-size: 20px; }
+    to   { font-size: 40px; }
+}
+
+--------------------------------
+
+Using Percentages (%)
+
+- Gives more control over animation stages.
+
+Syntax:
+
+@keyframes grow {
+    0%   { font-size: 20px; }
+    50%  { font-size: 30px; }
+    100% { font-size: 40px; }
+}
+
+0%   → Start
+50%  → Middle
+100% → End
+
+--------------------------------
+
+Animation Shorthand
+
+animation:
+name duration timing-function delay iteration-count direction;
+
+Example:
+
+animation: grow 2s linear 1s infinite normal;
+
+Meaning:
+grow     → Animation name
+2s       → Duration
+linear   → Speed
+1s       → Delay
+infinite → Repeat forever
+normal   → Normal direction
+*/

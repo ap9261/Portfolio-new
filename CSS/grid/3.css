@@ -1,0 +1,54 @@
+/*
+======== grid-template-rows & grid-template-columns ========
+
+grid-template-rows
+- Defines the height of each row.
+
+grid-template-columns
+- Defines the width of each column.
+
+Syntax:
+
+.container{
+    display: grid;
+
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-columns: 100px 100px 100px 100px;
+}
+
+Meaning:
+- Creates 5 rows, each 50px high.
+- Creates 4 columns, each 100px wide.
+
+Diagram:
+
+        100px   100px   100px   100px
+      +-------+-------+-------+-------+
+50px  |       |       |       |       |
+      +-------+-------+-------+-------+
+50px  |       |       |       |       |
+      +-------+-------+-------+-------+
+50px  |       |       |       |       |
+      +-------+-------+-------+-------+
+50px  |       |       |       |       |
+      +-------+-------+-------+-------+
+50px  |       |       |       |       |
+      +-------+-------+-------+-------+
+*/
+
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: black;
+    display: grid;
+       grid-template-columns: repeat(4,50px);
+    
+
+}
+.item{
+    
+height: 50px;
+width: 100px;
+background-color: green;
+border:  2px solid black;
+}

@@ -1,0 +1,59 @@
+/*
+======== Media Queries ========
+
+- Used to make a website responsive.
+- Applies CSS based on the viewport (screen) size.
+
+Syntax:
+
+@media (condition) {
+    /* CSS */
+}
+
+--------------------------------
+
+min-width
+- Applies styles when the screen width is
+  greater than or equal to the given value.
+
+Example:
+
+@media (min-width: 400px) {
+    div {
+        background-color: red;
+    }
+}
+
+Meaning:
+Screen Width ≥ 400px ✔
+
+--------------------------------
+
+max-width
+- Applies styles when the screen width is
+  less than or equal to the given value.
+
+Example:
+
+@media (max-width: 400px) {
+    div {
+        background-color: red;
+    }
+}
+
+Meaning:
+Screen Width ≤ 400px ✔
+
+--------------------------------
+
+Quick Recall:
+
+min-width → ≥ (At least)
+max-width → ≤ (At most)
+*/
+
+@media(orientation: landscape){
+    h1{
+        background-color: aqua;
+    }
+}

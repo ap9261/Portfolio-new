@@ -1,0 +1,33 @@
+/*
+======== Grid Alignment ========
+
+justify-items (Container)
+- Aligns all items horizontally (← →).
+
+justify-self (Item)
+- Aligns one item horizontally.
+
+--------------------------------
+
+align-items (Container)
+- Aligns all items vertically (↑ ↓).
+
+align-self (Item)
+- Aligns one item vertically.
+
+--------------------------------
+
+place-items
+- Shortcut for:
+  align-items + justify-items
+
+place-self
+- Shortcut for:
+  align-self + justify-self
+
+Quick Recall:
+justify → Horizontal
+align   → Vertical
+items   → All items (Container)
+self    → Single item (Item)
+*/
